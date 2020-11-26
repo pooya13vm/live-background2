@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    overflow: hidden;
+}
+section{
+    height: 100vh;
+    background: linear-gradient(to right, #000000, #0f9b0f);
+}
+i{
+    position: absolute;
+    pointer-events:none;
+    background: white;
+    animation: animate 5s linear infinite;
+    border-radius: 50%;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0);
+}
+
+@keyframes animate{
+    0%{
+        transform: scale(0) translateY(0) rotate(0deg);
+        opacity: 0;
+    }
+    10%{
+        opacity: 1;
+    }
+    90%{
+        opacity: 1;
+    }
+    100%{
+        transform: scale(1) translateY(-500%) rotate(360deg);
+        opacity: 0;
+    }
+}
